@@ -10,8 +10,7 @@ export default function ButtonsList(props) {
     const addButtonToList = () => {
         const winnerButtonPosition = Math.floor(Math.random() * props.numberOfButtons);
         for (let i = 0; i < props.numberOfButtons; ++i) {
-            const aux_id = i;
-            newButtons[i] = <Button id = {aux_id} winnerButtonPosition = {winnerButtonPosition} />
+            newButtons[i] = <Button id = {i} winnerButtonPosition = {winnerButtonPosition} />
         }
         props.setButtonsList(newButtons)
     }
