@@ -1,20 +1,14 @@
 import { useState} from "react"
-import StartGame from "./StartGame";
+import ButtonsList from "./ButtonsList"
 
 function App() {
 
 const [numberOfButtons, setNumberOfButtons] = useState(0);
-
-const handleNumberOfButtons = (event) => {
-  setNumberOfButtons(event.target.value)
-}
-
+const [buttonsList, setButtonsList] = useState([]);
 
   return (
   <div className = "App">
-    <input onChange = {handleNumberOfButtons}/>  
-    <StartGame numberOfButtons = {numberOfButtons}/>
-  
+    <ButtonsList numberOfButtons = {numberOfButtons} setNumberOfButtons = {setNumberOfButtons} buttonsList = {buttonsList} setButtonsList = {setButtonsList}/>
   </div>
   );
 }
