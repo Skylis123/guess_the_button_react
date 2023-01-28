@@ -7,7 +7,6 @@ function App() {
 const [numberOfButtons, setNumberOfButtons] = useState(0);
 const [buttonsList, setButtonsList] = useState([]);
 
-
   return (
   <div className = "App">
     <ButtonsList 

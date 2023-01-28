@@ -2,6 +2,7 @@ import React from 'react'
 import Button from "./Button"
 
 export default function ButtonsList(props) {
+  
     const handleNumberOfButtons = (event) => {
         props.setNumberOfButtons(event.target.value)
     }
