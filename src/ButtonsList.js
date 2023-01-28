@@ -16,9 +16,6 @@ export default function ButtonsList(props) {
         props.setButtonsList(newButtons)
     }
 
-
-
-
   return (
     <div>
       <input onChange = {handleNumberOfButtons}/>
